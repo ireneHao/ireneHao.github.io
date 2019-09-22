@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: white;
-            
+
             margin: 7%;
         }
 
@@ -28,22 +28,22 @@
             text-shadow: 2px 2px gray;
             font-size: 60px;
             font-weight: normal;
-            
+
 
         }
 
         p {
             color: black;
-           font-family: 'VT323', monospace;
+            font-family: 'VT323', monospace;
             font-size: 30px;
             font-weight: normal;
             padding: 10px;
         }
 
         #main {
-           
-            top: 0;       
-         
+
+            top: 0;
+
 
         }
 
@@ -55,10 +55,10 @@
         #ssDiv {
             float: left;
             display: inline-block;
-            padding-left:10%;
+            padding-left: 10%;
             width: 23%;
-            
-            
+
+
         }
 
         #ssCat {
@@ -69,13 +69,21 @@
 
         }
 
+        #eduDiv {
+            float: left;
+            display: inline-block;
+            padding-left: 10%;
+            width: 33%;
+
+        }
+
 
 
         li {
             font-family: 'VT323', monospace;
             font-size: 20px;
             padding: 10px;
-           
+
 
         }
 
@@ -126,58 +134,73 @@
             height: 80%;
 
         }
-        
-        #skighP {
+
+        #skighDiv {
+            display: inline-table;
+        }
+
+        #skighDivImage {
+            padding-top: 5%;
+            width: 33%;
             float: left;
+        }
+
+        #skighDivText {
+            width: 65%;
+            float: left;
+        }
+
+        #skighP {
+
             padding: 30px;
             font-size: 17px;
-            text-overflow: clip;
+
         }
-        
-        #skigh {
-            float: left;
-            padding-right: 30px;
-        }
+
+
         #contDiv {
             clear: both;
             width: 80%;
             background-color: lavender;
             height: 80%;
-            
-          
+
+
         }
-        #cp{
-            
-            font-size: 17px; 
+
+        #cp {
+
+            font-size: 17px;
             padding: 6%;
         }
-        #hList{
+
+        #hList {
             list-style-image: url(images/heartBullet.png);
-            
+
         }
-        
-        #girl{
+
+        #girl {
             width: 80%;
         }
+
         #head {
             width: 80%;
             background-image: url(images/tester.png);
             background-size: 100% 100%;
             height: 100%;
+            padding-top: 5%;
+            padding-bottom: 10%;
         }
+
         #intro {
             width: 90%;
-            color:white;
-        }
-        #top{
             color: white;
-            
         }
-        #skighDiv{
-            padding-left:10%;
+
+        #top {
+            color: white;
+
         }
-        
-       
+     
     </style>
 
 </head>
@@ -185,82 +208,160 @@
 
 
 <body>
-    
-      <ul id="main">
 
-            <li id="m"> <a href=#top>HOME</a></li>
-            <li id="m"> <a href=#ss>SKILLSET</a></li>
-            <li id="m"> <a href=#proj>PROJECTS</a></li>
-            <li id="m"> <a href=#cont>CONTACT</a></li>
+    <ul id="main">
 
-        </ul>
+        <li id="m"> <a href=#top>HOME</a></li>
+        <li id="m"> <a href=#ss>SKILLSET</a></li>
+        <li id="m"> <a href=#proj>PROJECTS</a></li>
+        <li id="m"> <a href=#cont>CONTACT</a></li>
+
+    </ul>
 
     <center>
-    
-        <img id = "girl" src="images/PLEASE.png" alt="pixel girl in sky">
-        
-        <div id = "head">
+
+        <img id="girl" src="images/PLEASE.png" alt="pixel girl in sky">
+
+        <div id="head">
 
             <h1 id="top">IRENE HAO </h1>
-            <p id = "intro"> Hi! I'm Irene, a Computer Science major at the University of Maryland, College Park. 
-            Creatively driven, my goal is to create projects that both look and run beautifully!
-            
-            
+            <p id="intro"> Hi! I'm Irene, a Computer Science major at the University of Maryland, College Park. Creatively driven, my goal is to create projects that both look and run beautifully!
+
+
             </p>
-            
-            
+
+
         </div>
 
     </center>
-    
-    
-    
+
+
+
     <!-- -->
     <!-- Skill set area -->
-    
 
-    <h2 id="ss">SKILLSET / interests </h2>
+    <div id="seperator">
+    
+        <h2 id="ss">SKILLSET / interests </h2>
+
+   
+
+        <ul>
+
+            <div id="ssDiv">
+
+                <li id="ssCat">Software Development</li>
+
+                <ul id="hList">
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>Ruby</li>
+                    <li>Ocaml</li>
+                    <li>Html/Css</li>
+
+
+                </ul>
+
+            </div>
+
+            <div id="ssDiv">
+
+
+            </div>
+
+            <div id="ssDiv">
+                <li id="ssCat">Game Design</li>
+                <ul id="hList">
+                    <li>Unity/c#</li>
+                    <li>Digital Art</li>
+                    <li>Musical Composition</li>
+
+                </ul>
+            </div>
+
+            <div id="ssDiv">
+                <li id="ssCat">Interests</li>
+                <ul id="hList">
+                    <li>Video Games</li>
+                    <li>World Building</li>
+                    <li>Drawing</li>
+                    <li>Guinea Pigs</li>
+
+                </ul>
+            </div>
+
+
+        </ul>
+
+    </div>
+
+    <!-- PROJECTS -->
+
+
+
+    <h2 id="proj">PROJECTS</h2>
+
+
+    <div id="projDiv">
+
+        <div id= "skighDiv">
+
+            <div id="skighDivImage">
+
+
+                <img src="images/titlepage.png" width=200px height=170px>
+
+            </div>
+
+            <div id="skighDivText">
+
+                <p id="skighP">
+                    SKIGH - My first real attempt at creating a Game. Created using Unity.
+                    <br><br> All images and music are my own!
+                    <br><br> Genre : Platformer
+                    <br><br> Description: Make it to the top! There has to be something good up there...
+                    <br><br> Download : <a href="https://emanirene.itch.io/skigh">SKIGH via Itch.io</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <h2 id="edu">EDUCATION</h2>
+
+
 
     <ul>
 
-        <div id="ssDiv">
+        <div id="eduDiv">
 
-            <li id="ssCat">Software Development</li>
+            <li id="ssCat">University of Maryland</li>
 
-            <ul id = "hList">
-                <li>Java</li>
-                <li>C</li>
-                <li>Ruby</li>
-                <li>Ocaml</li>
-                <li>Html/Css</li>
+            <ul id="hList">
+                <li>Currently a Sophmore</li>
+                <li>3.44 GPA</li>
 
 
             </ul>
 
         </div>
 
-        <div id="ssDiv">
 
-
-        </div>
-
-        <div id="ssDiv">
-            <li id="ssCat">Game Design</li>
-            <ul id = "hList">
-                <li>Unity/c#</li>
-                <li>Digital Art</li>
-                <li>Musical Composition</li>
-
-            </ul>
-        </div>
-
-        <div id="ssDiv">
-            <li id="ssCat">Interests</li>
-            <ul id = "hList">
-                <li>Video Games</li>
-                <li>World Building</li>
-                <li>Drawing</li>
-                <li>Guinea Pigs</li>
+        <div id="eduDiv">
+            <li id="ssCat">Relevent Coursework</li>
+            <ul id="hList">
+                <li>Object Oriented Programming 1,2 </li>
+                <li>Discrete Structures</li>
+                <li>Introduction to Computer Systems</li>
+                <li>Organization of Programming Languages</li>
+                <li>Algorithms</li>
+                <li>Intro to Game and Simulation</li>
 
             </ul>
         </div>
@@ -269,58 +370,31 @@
     </ul>
 
 
-    
-    <!-- PROJECTS -->
-    
-    
-
-    <h2 id="proj">PROJECTS</h2>
-
-
-    <div id="projDiv">
-      
-        
-        <div id = "skighDiv">
-        
-       
-        
-        <p id = "skighP">  <img src="images/titlepage.png" width = 200px height = 170px id = "SKIGH" >  SKIGH - My first real attempt at creating a Game. Created using Unity. 
-            
-        <br><br> All images and music are my own!
-        <br><br> Genre : Platformer
-        <br><br> Description: Make it to the top! There has to be something good up there...
-        <br><br> Download : <a href="https://emanirene.itch.io/skigh">SKIGH via Itch.io</a>
-            
-        </p>
-       
-        </div>    
-
-     </div> 
 
 
     <h2 id="cont">CONTACT / Where else to find me </h2>
-    
-   <center>
-    
-    <div id="contDiv">
-        
-        
-        
-        <p id = "cp"> Email: haoirenehao@gmail.com
-        
-        <br><br>Phone Number: 240-274-6588
-        <br><br>Linkedin: <a href="https://www.linkedin.com/in/irene-hao-9b00a9194/">Here</a>
-        <br><br>GitHub: <a href="https://github.com/ireneHao">Here</a>
-        <br><br>Itch.io: <a href="https://emanirene.itch.io">Here</a>
-        <br><br>
-        <br><br>I currently live in Rockville, Maryland
-        
-        
-        </p>   
 
-  
+    <center>
 
-    </div>
+        <div id="contDiv">
+
+
+
+            <p id="cp"> Email: haoirenehao@gmail.com
+
+                <br><br>Phone Number: 240-274-6588
+                <br><br>Linkedin: <a href="https://www.linkedin.com/in/irene-hao-9b00a9194/">Here</a>
+                <br><br>GitHub: <a href="https://github.com/ireneHao">Here</a>
+                <br><br>Itch.io: <a href="https://emanirene.itch.io">Here</a>
+                <br><br>
+                <br><br>I currently live in Rockville, Maryland
+
+
+            </p>
+
+
+
+        </div>
 
     </center>
 
